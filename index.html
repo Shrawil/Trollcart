@@ -39,7 +39,7 @@
                 border: none;
                 background: #f8f3f3;
                 border-radius: 15px;
-                padding: 25px;
+                padding: 15px;
                 box-shadow: 0 4px 10px rgba(0,0,0,0.08);
                 transition: 0.2s ease;
             }
@@ -51,7 +51,7 @@
             .left-bar {
                 background: rgba(255, 255, 255, 0.6);
                 border-radius: 20px;
-                padding: 12px;
+                padding: 10px;
                 cursor: default;
             }
             
@@ -136,9 +136,8 @@
             }
         
             .left-bar {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
+                display: flex;
+                gap: 3px;
                 text-align: center;
             }
         
@@ -166,14 +165,14 @@
         </style>
     </head>
     <body>
-        <h1>Troll Cart</h1>
         <div class="left-bar">
+            <h1>Troll Cart</h1>
             <div class="bar" onclick="showHome()">
                 <h2>Home</h2>
-            </div>
+            </div><br>
             <div class="bar" onclick="showCart()">
                 <h2>Cart</h2>
-            </div>
+            </div><br>
             <div class="bar" onclick="showID()">
                 <h2>You</h2>
             </div><br>
