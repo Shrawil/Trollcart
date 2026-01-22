@@ -39,7 +39,7 @@
                 border: none;
                 background: #f8f3f3;
                 border-radius: 15px;
-                padding: 15px;
+                padding: 25px;
                 box-shadow: 0 4px 10px rgba(0,0,0,0.08);
                 transition: 0.2s ease;
             }
@@ -136,8 +136,9 @@
             }
         
             .left-bar {
-                display: flex;
-                gap: 3px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
                 text-align: center;
             }
         
@@ -169,10 +170,10 @@
             <h1>Troll Cart</h1>
             <div class="bar" onclick="showHome()">
                 <h2>Home</h2>
-            </div><br>
+            </div>
             <div class="bar" onclick="showCart()">
                 <h2>Cart</h2>
-            </div><br>
+            </div>
             <div class="bar" onclick="showID()">
                 <h2>You</h2>
             </div><br>
@@ -257,7 +258,7 @@
             let home = document.getElementById('home');
             let user = document.getElementById('user');
             let cart = document.getElementById('cart');
-            let name = prompt("Enter your name ");
+            //let name = prompt("Enter your name ");
             
             let showItems = document.getElementById("itemsCounter");
             
