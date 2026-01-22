@@ -127,15 +127,7 @@
                 text-align: left;
                 padding: 50px;
             }
-            #myQR {
-                border-radius: 20px;
-                height: 150px;
-                width: 150px;
-                padding: 10px;
-                background-color: cadetblue; 
-            }
-            
-            /* USED AI FOR @media PART */
+       
             @media (max-width: 768px) {
         
             body {
@@ -168,23 +160,23 @@
         
             #user,
             #cart {
-                padding: 20px;
+                padding: 10px;
             }
         }
         </style>
     </head>
     <body>
+        <h1>Troll Cart</h1>
         <div class="left-bar">
-            <h1>Troll Cart</h1>
             <div class="bar" onclick="showHome()">
                 <h2>Home</h2>
-            </div><br>
+            </div>
             <div class="bar" onclick="showCart()">
                 <h2>Cart</h2>
-            </div><br>
+            </div>
             <div class="bar" onclick="showID()">
                 <h2>You</h2>
-            </div><br><br>
+            </div><br>
             <div id="counter">
                 <h2 id='itemsCounter'>0 Items in Cart!</h2>
             </div>
